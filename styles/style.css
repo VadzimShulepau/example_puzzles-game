@@ -1,0 +1,135 @@
+@font-face {
+  font-family: "Roboto Mono";
+  src: url("../fonts/RobotoMono-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Mono";
+  font-size: 16px;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+}
+
+button {
+  background-color: #0d9095;
+  border: none;
+  outline: none;
+  padding: 3%;
+  border-radius: 5px;
+  color: white;
+  /* min-width: max-content; */
+  cursor: pointer;
+  font-size: 1.2em;
+}
+
+span {
+  margin: 1%;
+}
+
+button:active {
+  background-color: #666666;
+}
+
+button:disabled {
+  background-color: #666666;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  min-height: 7em;
+  max-height: 15em;
+  gap: 10%;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.game-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-basis: 35em;
+  max-width: 35em;
+  /* max-width: 100%; */
+  margin: auto auto;
+  min-height: 100vh;
+}
+
+.buttons-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 7em;
+  gap: 2%;
+}
+
+.game-progress-field {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.step-field,
+.time-field {
+  margin: 1%;
+  font-size: 1.2em;
+}
+
+.game-field {
+  display: grid;
+  position: relative;
+  grid-template: repeat(4, 1fr) / repeat(4, 1fr);
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+  box-sizing: content-box;
+  justify-content: center;
+  align-items: center;
+  /* place-content: stretch / stretch; */
+  margin: 20px 0;
+  background-color: #e5e5e5;
+  /* transition: all 0.3s ease-in-out; */
+}
+
+.puzzle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  /* place-items: stretch / stretch; */
+  font-size: 2em;
+  cursor: pointer;
+  background-color: white;
+  aspect-ratio: 1 / 1;
+  transition: all 0.2s ease-in-out;
+  transform: scale(1);
+}
+
+.puzzle:active {
+  transform: scale(0.9);
+  opacity: 0.7;
+}
