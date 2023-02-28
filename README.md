@@ -1,1 +1,1 @@
-# RSS Gem Puzzle
+# Puzzles
